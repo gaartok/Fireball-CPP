@@ -1,0 +1,175 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrc1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+APP_ICON                ICON    DISCARDABLE     "Art\\FireBall.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+APP_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&Game"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tESC",                  101
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "Show &Frame Rate\tF5",        104
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+APP_ACCEL ACCELERATORS MOVEABLE PURE 
+BEGIN
+    VK_RETURN,      IDC_STARTGAME,          VIRTKEY, NOINVERT
+    VK_ESCAPE,      IDC_QUIT,               VIRTKEY, NOINVERT
+    VK_F12,         IDC_QUIT,               VIRTKEY, NOINVERT
+    VK_F1,          IDC_TRAILS,             VIRTKEY, NOINVERT
+    VK_F3,          IDC_AUDIO,              VIRTKEY, NOINVERT
+    VK_F5,          IDC_FRAMERATE,          VIRTKEY, NOINVERT
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resrc1.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+NUMBERS                 BITMAP  DISCARDABLE     "Art\\Numbers.bmp"
+SPLASH                  BITMAP  DISCARDABLE     "Art\\Splash.bmp"
+HERO                    BITMAP  DISCARDABLE     "Art\\Hero.bmp"
+BASKET                  BITMAP  DISCARDABLE     "Art\\Basket.bmp"
+ROCK                    BITMAP  DISCARDABLE     "Art\\Rocks.bmp"
+VOLCANO                 BITMAP  DISCARDABLE     "Art\\Volcano.bmp"
+HOUSE                   BITMAP  DISCARDABLE     "Art\\House.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+YELLING                 WAVE    DISCARDABLE     "Art\\yelling.wav"
+AHHHHHHH                WAVE    DISCARDABLE     "Art\\ahhhhh.wav"
+APPLAUSE1               WAVE    DISCARDABLE     "Art\\applaus1.wav"
+APPLAUSE2               WAVE    DISCARDABLE     "Art\\applaus2.wav"
+BANG                    WAVE    DISCARDABLE     "Art\\b_bang_2.wav"
+BABY1                   WAVE    DISCARDABLE     "Art\\baby1.wav"
+BGSPLASH                WAVE    DISCARDABLE     "Art\\bgsplash.wav"
+BONK                    WAVE    DISCARDABLE     "Art\\bonk.wav"
+BOOM                    WAVE    DISCARDABLE     "Art\\boom.wav"
+CHEERS2                 WAVE    DISCARDABLE     "Art\\cheers2.wav"
+COOL                    WAVE    DISCARDABLE     "Art\\cool.wav"
+CRYING                  WAVE    DISCARDABLE     "Art\\crying.wav"
+EXCELLENT               WAVE    DISCARDABLE     "Art\\excellnt.wav"
+EXPLOSION               WAVE    DISCARDABLE     "Art\\exploson.wav"
+GLASS                   WAVE    DISCARDABLE     "Art\\glass.wav"
+GLASSBRK                WAVE    DISCARDABLE     "Art\\glassbrk.wav"
+GREATBALLS              WAVE    DISCARDABLE     "Art\\grtballs.wav"
+HALLELEUJAI             WAVE    DISCARDABLE     "Art\\hallelu.wav"
+JIBBERISH               WAVE    DISCARDABLE     "Art\\jiberish.wav"
+JOKERLAUGH              WAVE    DISCARDABLE     "Art\\jokerlau.wav"
+KINISON                 WAVE    DISCARDABLE     "Art\\kinison.wav"
+KOOK                    WAVE    DISCARDABLE     "Art\\kook.wav"
+LAUGH1                  WAVE    DISCARDABLE     "Art\\laugh1.wav"
+LAUGH2                  WAVE    DISCARDABLE     "Art\\laugh2.wav"
+MASTER                  WAVE    DISCARDABLE     "Art\\master.wav"
+MWPUNCH                 WAVE    DISCARDABLE     "Art\\mwpunch.wav"
+NEENER                  WAVE    DISCARDABLE     "Art\\neener.wav"
+NI                      WAVE    DISCARDABLE     "Art\\ni.wav"
+OUCH                    WAVE    DISCARDABLE     "Art\\ouch.wav"
+OUTAHERE                WAVE    DISCARDABLE     "Art\\outahere.wav"
+POP                     WAVE    DISCARDABLE     "Art\\pop.wav"
+POP2                    WAVE    DISCARDABLE     "Art\\pop2.wav"
+POP1                    WAVE    DISCARDABLE     "Art\\pop1.wav"
+SCREAM                  WAVE    DISCARDABLE     "Art\\scream.wav"
+TURNBACK                WAVE    DISCARDABLE     "Art\\turnback.wav"
+TOADZILLA               WAVE    DISCARDABLE     "Art\\vtoadzil.wav"
+WIPEOUT                 WAVE    DISCARDABLE     "Art\\wipeout.wav"
+WOOW1                   WAVE    DISCARDABLE     "Art\\woow1.wav"
+AGONY                   WAVE    DISCARDABLE     "Art\\agony.wav"
+ARGH                    WAVE    DISCARDABLE     "Art\\089_argh.wav"
+AAAH                    WAVE    DISCARDABLE     "Art\\aaah.wav"
+SPLASH                  WAVE    DISCARDABLE     "Art\\splash.wav"
+WATER                   WAVE    DISCARDABLE     "Art\\water.wav"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

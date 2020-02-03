@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{b3013dbb-17c6-42be-9bf8-fe073e4913cd}</UniqueIdentifier>
+      <Extensions>*.h *.hpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{bb4f1b56-3fbe-430e-acb9-d1158c0ea5fb}</UniqueIdentifier>
+      <Extensions>*.c *.cpp</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{a4f357c8-e34e-4801-8945-58a27c63c802}</UniqueIdentifier>
+      <Extensions>*.ico, *.bmp, *.wav, *.rc</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\Bitmaps">
+      <UniqueIdentifier>{484e5a1c-98ee-4368-8b77-0ed3ffeb9822}</UniqueIdentifier>
+      <Extensions>*.bmp</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\Sounds">
+      <UniqueIdentifier>{c21f0a77-8605-43c7-8d90-2fcab7d152b2}</UniqueIdentifier>
+      <Extensions>*.wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AliveObject.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="App.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Basket.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectDraw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dsutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Emitter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Hero.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="House.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="input.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MathStuff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Misc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Rock.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AliveObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="App.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AppUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Basket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectDraw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dsutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Emitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="global.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Hero.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="House.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Misc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Registry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Rock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FireBall.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Art\Basket.bmp">
+      <Filter>Resource Files\Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\Hero.bmp">
+      <Filter>Resource Files\Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\House.bmp">
+      <Filter>Resource Files\Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\Numbers.bmp">
+      <Filter>Resource Files\Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\Rocks.bmp">
+      <Filter>Resource Files\Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\Splash.bmp">
+      <Filter>Resource Files\Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\Volcano.bmp">
+      <Filter>Resource Files\Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\089_argh.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\aaah.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\agony.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\ahhhhh.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\applaus1.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\applaus2.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\b_bang_2.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\baby1.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\bgsplash.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\bonk.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\boom.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\cheers2.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\cool.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\crying.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\excellnt.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\exploson.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\glass.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\glassbrk.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\grtballs.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\hallelu.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\jiberish.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\jokerlau.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\kinison.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\kook.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\laugh1.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\laugh2.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\master.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\mwpunch.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\neener.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\ni.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\ouch.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\outahere.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\pop.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\pop1.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\pop2.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\scream.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\splash.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\turnback.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\vtoadzil.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\water.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\wipeout.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\woow1.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\yelling.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Art\FireBall.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

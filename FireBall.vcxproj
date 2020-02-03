@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\FireBall.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\FireBall.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\FireBall.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>FireBall_D.exe</OutputFile>
+      <AdditionalDependencies>dxguid.lib;ddraw.lib;dsound.lib;winmm.lib;dinput.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\FireBall.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\FireBall.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\FireBall.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>FireBall.exe</OutputFile>
+      <AdditionalDependencies>ddraw.lib;dsound.lib;winmm.lib;dinput.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AliveObject.hpp" />
+    <ClInclude Include="App.hpp" />
+    <ClInclude Include="Basket.hpp" />
+    <ClInclude Include="Debug.h" />
+    <ClInclude Include="DirectDraw.h" />
+    <ClInclude Include="dsutil.h" />
+    <ClInclude Include="Emitter.hpp" />
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="Hero.hpp" />
+    <ClInclude Include="House.hpp" />
+    <ClInclude Include="input.hpp" />
+    <ClInclude Include="MathStuff.h" />
+    <ClInclude Include="Misc.hpp" />
+    <ClInclude Include="Renderer.hpp" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Rock.hpp" />
+    <ClInclude Include="Types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AliveObject.cpp" />
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="AppUtils.cpp" />
+    <ClCompile Include="Basket.cpp" />
+    <ClCompile Include="debug.cpp" />
+    <ClCompile Include="DirectDraw.cpp" />
+    <ClCompile Include="dsutil.cpp" />
+    <ClCompile Include="Emitter.cpp" />
+    <ClCompile Include="global.cpp" />
+    <ClCompile Include="Hero.cpp" />
+    <ClCompile Include="House.cpp" />
+    <ClCompile Include="input.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Misc.cpp" />
+    <ClCompile Include="Registry.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="Rock.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Art\Basket.bmp" />
+    <CustomBuild Include="Art\Hero.bmp" />
+    <CustomBuild Include="Art\House.bmp" />
+    <CustomBuild Include="Art\Numbers.bmp" />
+    <CustomBuild Include="Art\Rocks.bmp" />
+    <CustomBuild Include="Art\Splash.bmp" />
+    <CustomBuild Include="Art\Volcano.bmp" />
+    <CustomBuild Include="Art\089_argh.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\aaah.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\agony.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\ahhhhh.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\applaus1.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\applaus2.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\b_bang_2.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\baby1.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\bgsplash.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\bonk.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\boom.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\cheers2.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\cool.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\crying.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\excellnt.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\exploson.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\glass.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\glassbrk.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\grtballs.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\hallelu.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\jiberish.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\jokerlau.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\kinison.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\kook.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\laugh1.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\laugh2.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\master.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\mwpunch.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\neener.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\ni.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\ouch.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\outahere.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\pop.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\pop1.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\pop2.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\scream.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\splash.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\turnback.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\vtoadzil.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\water.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\wipeout.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\woow1.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\yelling.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Art\FireBall.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FireBall.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
